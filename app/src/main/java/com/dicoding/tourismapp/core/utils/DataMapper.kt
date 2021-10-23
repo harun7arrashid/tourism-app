@@ -24,7 +24,9 @@ object DataMapper {
         return tourismList
     }
 
+    //mengubah entity (Room) model menjadi domain model
     fun mapEntitiesToDomain(input: List<TourismEntity>): List<Tourism> =
+        // map Kotlin untuk melakukan perulangan pada sebuah List
         input.map {
             Tourism(
                 tourismId = it.tourismId,
@@ -39,6 +41,7 @@ object DataMapper {
             )
         }
 
+    // untuk mengubah domain model menjadi Entity Model Room
     fun mapDomainToEntity(input: Tourism) = TourismEntity(
         tourismId = input.tourismId,
         description = input.description,

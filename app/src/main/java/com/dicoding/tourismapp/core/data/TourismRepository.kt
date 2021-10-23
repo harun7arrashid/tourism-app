@@ -34,10 +34,12 @@ class TourismRepository private constructor(
 
     override fun getAllTourism(): LiveData<Resource<List<Tourism>>> =
         object : NetworkBoundResource<List<Tourism>, List<TourismResponse>>(appExecutors) {
+
             override fun loadFromDB(): LiveData<List<Tourism>> {
                 //return localDataSource.getAllTourism()
+                // Transformations.map untuk mengubah tipe data yang di dalam LiveData tersebut.
                 return Transformations.map(localDataSource.getAllTourism()) {
-                    DataMapper.mapEntitiesToDomain(it)
+                    DataMapper.mapEntitiesToDomain(it) // mengubah entity (Room) model menjadi domain model
                 }
             }
 
@@ -62,7 +64,7 @@ class TourismRepository private constructor(
 
     override fun setFavoriteTourism(tourism: Tourism, state: Boolean) {
         //appExecutors.diskIO().execute { localDataSource.setFavoriteTourism(tourism, state) }
-        val tourisEntity = DataMapper.mapDomainToEntity(tourism)
+        val tourisEntity = DataMapper.mapDomainToEntity(tourism) // untuk mengubah domain model menjadi Entity Model Room
         appExecutors.diskIO().execute { localDataSource.setFavoriteTourism(tourisEntity, state) }
     }
 }
