@@ -28,10 +28,7 @@ class RemoteDataSource private constructor(private val apiService: ApiService) {
     //get data from remote api
         val client = apiService.getList()
         client.enqueue(object : Callback<ListTourismResponse> {
-            override fun onResponse(
-                call: Call<ListTourismResponse>,
-                response: Response<ListTourismResponse>
-            ) {
+            override fun onResponse(call: Call<ListTourismResponse>, response: Response<ListTourismResponse>) {
                 val dataArray = response.body()?.places
                 resultData.value = if (dataArray != null) ApiResponse.Success(dataArray) else ApiResponse.Empty
             }
