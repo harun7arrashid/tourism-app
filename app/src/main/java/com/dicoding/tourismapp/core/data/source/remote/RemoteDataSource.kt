@@ -38,16 +38,17 @@ class RemoteDataSource private constructor(private val apiService: ApiService) {
         client
             .subscribeOn(Schedulers.computation())  // computation itu yg berhubungan sama proses tinggi
             .observeOn(AndroidSchedulers.mainThread())
-            .take(1)
+            .take(1) // operator take(1) untuk mengambil data dari API sekali saja.
             .subscribe({ response ->
                 val dataArray = response.places
+                // onNext = meng-emmit setiap response
                 resultData.onNext(if (dataArray.isNotEmpty()) ApiResponse.Success(dataArray) else ApiResponse.Empty) // anggap aja resultData.value
             }, {
                 resultData.onNext(ApiResponse.Error(it.message.toString()))
                 Log.e("RemoteDataSource", it.toString())
             })
 
-        return resultData.toFlowable(BackpressureStrategy.BUFFER)
+        return resultData.toFlowable(BackpressureStrategy.BUFFER) // Buffer  hal ini karena kita ingin mengambil setiap data walaupun ter-delay.
 
 //        client.enqueue(object : Callback<ListTourismResponse> {
 //            override fun onResponse(call: Call<ListTourismResponse>, response: Response<ListTourismResponse>) {
