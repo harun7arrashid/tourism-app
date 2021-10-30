@@ -4,9 +4,10 @@ import androidx.lifecycle.LiveData
 import com.dicoding.tourismapp.core.data.Resource
 import com.dicoding.tourismapp.core.domain.model.Tourism
 import com.dicoding.tourismapp.core.domain.repository.ITourismRepository
+import javax.inject.Inject
 
 // Interactor itu buat UseCase nya
-class TourismInteractor(private val repo: ITourismRepository): TourismUseCase {
+class TourismInteractor @Inject constructor (private val repo: ITourismRepository): TourismUseCase {
 
     override fun getAllTourism() = repo.getAllTourism()
 

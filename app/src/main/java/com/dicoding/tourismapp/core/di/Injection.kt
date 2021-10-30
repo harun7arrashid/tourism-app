@@ -16,18 +16,18 @@ import com.dicoding.tourismapp.core.utils.JsonHelper
 
 object Injection {
 
-    fun provideRepository(context: Context): ITourismRepository { // knp return nya interface ? karena interface ini yg digunakan di viewModel
-        val database = TourismDatabase.getInstance(context)
+//    fun provideRepository(context: Context): ITourismRepository { // knp return nya interface ? karena interface ini yg digunakan di viewModel
+//        val database = TourismDatabase getInstance(context)
+//
+//        val remoteDataSource = RemoteDataSource.getInstance(ApiConfig.provideApiService())
+//        val localDataSource = LocalDataSource.getInstance(database.tourismDao())
+//        val appExecutors = AppExecutors()
+//
+//        return TourismRepository.getInstance(remoteDataSource, localDataSource, appExecutors)
+//    }
 
-        val remoteDataSource = RemoteDataSource.getInstance(ApiConfig.provideApiService())
-        val localDataSource = LocalDataSource.getInstance(database.tourismDao())
-        val appExecutors = AppExecutors()
-
-        return TourismRepository.getInstance(remoteDataSource, localDataSource, appExecutors)
-    }
-
-    fun provideTourismUseCase(context: Context): TourismUseCase {
-        val repository = provideRepository(context)
-        return TourismInteractor(repository)
-    }
+//    fun provideTourismUseCase(context: Context): TourismUseCase {
+//        val repository = provideRepository(context)
+//        return TourismInteractor(repository)
+//    }
 }
