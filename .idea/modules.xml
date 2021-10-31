@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tourism_App.iml" filepath="$PROJECT_DIR$/.idea/modules/Tourism_App.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tourism_App.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tourism_App.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Tourism_App.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Tourism_App.core.iml" />
     </modules>
   </component>
 </project>
