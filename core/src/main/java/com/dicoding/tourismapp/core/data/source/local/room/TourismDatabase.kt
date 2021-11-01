@@ -8,9 +8,9 @@ import androidx.room.RoomDatabase
 
 import com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity
 
-@Database(entities = [TourismEntity::class], version = 1, exportSchema = false)
+@Database(entities = [com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity::class], version = 1, exportSchema = false)
 abstract class TourismDatabase : RoomDatabase() {
 
-    abstract fun tourismDao(): TourismDao
+    abstract fun tourismDao(): com.dicoding.tourismapp.core.data.source.local.room.TourismDao
 
 }

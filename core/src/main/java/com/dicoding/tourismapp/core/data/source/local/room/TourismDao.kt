@@ -10,14 +10,14 @@ interface TourismDao {
 
     // Ubah LiveData jadi Flow
     @Query("SELECT * FROM tourism")
-    fun getAllTourism(): Flow<List<TourismEntity>>
+    fun getAllTourism(): Flow<List<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity>>
 
     @Query("SELECT * FROM tourism where isFavorite = 1")
-    fun getFavoriteTourism(): Flow<List<TourismEntity>>
+    fun getFavoriteTourism(): Flow<List<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertTourism(tourism: List<TourismEntity>)
+    suspend fun insertTourism(tourism: List<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity>)
 
     @Update
-    fun updateFavoriteTourism(tourism: TourismEntity)
+    fun updateFavoriteTourism(tourism: com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity)
 }

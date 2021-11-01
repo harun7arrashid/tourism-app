@@ -15,14 +15,14 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class TourismRepository(
-    private val remoteDataSource: RemoteDataSource,
-    private val localDataSource: LocalDataSource,
+    private val remoteDataSource: com.dicoding.tourismapp.core.data.source.remote.RemoteDataSource,
+    private val localDataSource: com.dicoding.tourismapp.core.data.source.local.LocalDataSource,
     private val appExecutors: AppExecutors
 ): ITourismRepository {
 
     // ubah tipe LiveData jadi Flow
-    override fun getAllTourism(): Flow<Resource<List<Tourism>>> =
-        object : NetworkBoundResource<List<Tourism>, List<TourismResponse>>() {
+    override fun getAllTourism(): Flow<com.dicoding.tourismapp.core.data.Resource<List<Tourism>>> =
+        object : com.dicoding.tourismapp.core.data.NetworkBoundResource<List<Tourism>, List<TourismResponse>>() {
 
             override fun loadFromDB(): Flow<List<Tourism>> {
                 return localDataSource.getAllTourism().map { DataMapper.mapEntitiesToDomain(it) } // mengubah entity (Room) model menjadi domain model
