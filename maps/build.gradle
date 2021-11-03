@@ -1,23 +1,21 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.dynamic-feature'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
 }
 
-apply from: '../shared_dependencies.gradle' // jgn lupa di module:core ditambahin jga
+apply from: '../shared_dependencies.gradle' // karna ini menampilkan data dari Repository
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
 
     defaultConfig {
-        applicationId "com.dicoding.tourismapp"
+        applicationId "com.dicoding.tourismapp.maps"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -28,6 +26,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -39,11 +38,10 @@ android {
     buildFeatures {
         viewBinding = true
     }
-    dynamicFeatures = [':maps']
 }
 
 dependencies {
-    implementation project(":core") // module core ini
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(":core") // manual
+    implementation project(":app") // dh bawaan
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
