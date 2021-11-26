@@ -40,6 +40,10 @@ android {
         viewBinding = true
     }
     dynamicFeatures = [':maps']
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
 }
 
 dependencies {
