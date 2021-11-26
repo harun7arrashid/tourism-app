@@ -1,0 +1,14 @@
+com/dicoding/tourismapp/core/databinding/ItemListTourismBinding.java
+ com.dicoding.tourismapp.core.databinding.ItemListTourismBinding
+com/dicoding/tourismapp/core/data/source/local/room/TourismDatabase_Impl.java
+ com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl
+ com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl$1
+com/dicoding/tourismapp/core/data/source/local/room/TourismDao_Impl.java
+ com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl
+ com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$1
+ com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$2
+ com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$3
+ com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$4
+ com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$5
+com/dicoding/tourismapp/core/BuildConfig.java
+ com.dicoding.tourismapp.core.BuildConfig

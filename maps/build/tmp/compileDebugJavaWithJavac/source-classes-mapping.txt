@@ -1,0 +1,4 @@
+com/dicoding/tourismapp/maps/BuildConfig.java
+ com.dicoding.tourismapp.maps.BuildConfig
+com/dicoding/tourismapp/maps/databinding/ActivityMapsBinding.java
+ com.dicoding.tourismapp.maps.databinding.ActivityMapsBinding

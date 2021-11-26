@@ -1,0 +1,4 @@
+#Fri Nov 26 14:15:39 WIB 2021
+base.0=/home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,75 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:4:5-43
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+	xmlns:dist
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:3:5-61
+	android:versionCode
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:2:11-69
+dist:module
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:6:5-14:19
+	dist:instant
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:7:9-29
+	dist:title
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:8:9-40
+dist:delivery
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:9:9-11:25
+dist:install-time
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:10:13-34
+dist:fusing
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:13:9-44
+	dist:include
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:13:22-41
+application
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:16:5-25:19
+activity#com.dicoding.tourismapp.maps.MapsActivity
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:17:9-24:20
+	android:name
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:host:maps+data:scheme:tourismapp
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:18:13-23:29
+action#android.intent.action.VIEW
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:19:17-68
+	android:name
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:20:17-75
+	android:name
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:20:27-73
+data
+ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:21:17-22:42
+	android:host
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:22:21-40
+	android:scheme
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml:21:23-50
+uses-sdk
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+		ADDED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
+		INJECTED from /home/s1mple/AndroidStudioProjects/Dicoding/Touris/maps/src/main/AndroidManifest.xml
