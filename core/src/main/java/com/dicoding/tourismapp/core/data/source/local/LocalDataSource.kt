@@ -1,20 +1,19 @@
 package com.dicoding.tourismapp.core.data.source.local
 
-import androidx.lifecycle.LiveData
 import com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity
 import com.dicoding.tourismapp.core.data.source.local.room.TourismDao
 import kotlinx.coroutines.flow.Flow
 
-class LocalDataSource(private val tourismDao: com.dicoding.tourismapp.core.data.source.local.room.TourismDao) {
+class LocalDataSource(private val tourismDao: TourismDao) {
 
     // ubah tipe LiveData menjadi Flow
-    fun getAllTourism(): Flow<List<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity>> = tourismDao.getAllTourism()
+    fun getAllTourism(): Flow<List<TourismEntity>> = tourismDao.getAllTourism()
 
-    fun getFavoriteTourism(): Flow<List<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity>> = tourismDao.getFavoriteTourism()
+    fun getFavoriteTourism(): Flow<List<TourismEntity>> = tourismDao.getFavoriteTourism()
 
-    suspend fun insertTourism(tourismList: List<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity>) = tourismDao.insertTourism(tourismList)
+    suspend fun insertTourism(tourismList: List<TourismEntity>) = tourismDao.insertTourism(tourismList)
 
-    fun setFavoriteTourism(tourism: com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity, newState: Boolean) {
+    fun setFavoriteTourism(tourism: TourismEntity, newState: Boolean) {
         tourism.isFavorite = newState
         tourismDao.updateFavoriteTourism(tourism)
     }

@@ -20,12 +20,12 @@ import java.util.concurrent.TimeUnit
 // Tambahkan kode berikut yang sebelumnya berada di TourismDatabase, dan ApiConfig.
 
 val databaseModule = module {
-    factory { get<com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase>().tourismDao() }
+    factory { get<TourismDatabase>().tourismDao() }
     // injection di modul tertentu aja
     single {
         Room.databaseBuilder(
             androidContext(),
-            com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase::class.java, "Tourism.db"
+            TourismDatabase::class.java, "Tourism.db"
         ).fallbackToDestructiveMigration().build()
     }
 }
@@ -49,11 +49,11 @@ val networkModule = module {
 }
 
 val repositoryModule = module {
-    single { com.dicoding.tourismapp.core.data.source.local.LocalDataSource(get()) }
-    single { com.dicoding.tourismapp.core.data.source.remote.RemoteDataSource(get()) }
+    single { LocalDataSource(get()) }
+    single { RemoteDataSource(get()) }
     factory { AppExecutors() }
     single<ITourismRepository> {
-        com.dicoding.tourismapp.core.data.TourismRepository(
+        TourismRepository(
             get(),
             get(),
             get()

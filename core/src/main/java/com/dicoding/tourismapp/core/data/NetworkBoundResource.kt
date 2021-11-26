@@ -1,10 +1,6 @@
 package com.dicoding.tourismapp.core.data
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MediatorLiveData
 import com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse
-
-import com.dicoding.tourismapp.core.utils.AppExecutors
 import kotlinx.coroutines.flow.*
 
 abstract class NetworkBoundResource<ResultType, RequestType> {

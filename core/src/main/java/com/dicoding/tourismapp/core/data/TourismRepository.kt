@@ -1,10 +1,7 @@
 package com.dicoding.tourismapp.core.data
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.Transformations
 import com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse
 import com.dicoding.tourismapp.core.data.source.local.LocalDataSource
-import com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity
 import com.dicoding.tourismapp.core.data.source.remote.RemoteDataSource
 import com.dicoding.tourismapp.core.data.source.remote.response.TourismResponse
 import com.dicoding.tourismapp.core.domain.model.Tourism
@@ -15,14 +12,14 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class TourismRepository(
-    private val remoteDataSource: com.dicoding.tourismapp.core.data.source.remote.RemoteDataSource,
-    private val localDataSource: com.dicoding.tourismapp.core.data.source.local.LocalDataSource,
+    private val remoteDataSource: RemoteDataSource,
+    private val localDataSource: LocalDataSource,
     private val appExecutors: AppExecutors
 ): ITourismRepository {
 
     // ubah tipe LiveData jadi Flow
-    override fun getAllTourism(): Flow<com.dicoding.tourismapp.core.data.Resource<List<Tourism>>> =
-        object : com.dicoding.tourismapp.core.data.NetworkBoundResource<List<Tourism>, List<TourismResponse>>() {
+    override fun getAllTourism(): Flow<Resource<List<Tourism>>> =
+        object : NetworkBoundResource<List<Tourism>, List<TourismResponse>>() {
 
             override fun loadFromDB(): Flow<List<Tourism>> {
                 return localDataSource.getAllTourism().map { DataMapper.mapEntitiesToDomain(it) } // mengubah entity (Room) model menjadi domain model

@@ -5,10 +5,10 @@ import com.dicoding.tourismapp.core.data.source.remote.response.TourismResponse
 import com.dicoding.tourismapp.core.domain.model.Tourism
 
 object DataMapper {
-    fun mapResponsesToEntities(input: List<TourismResponse>): List<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity> {
-        val tourismList = ArrayList<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity>()
+    fun mapResponsesToEntities(input: List<TourismResponse>): List<TourismEntity> {
+        val tourismList = ArrayList<TourismEntity>()
         input.map {
-            val tourism = com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity(
+            val tourism = TourismEntity(
                 tourismId = it.id,
                 description = it.description,
                 name = it.name,
@@ -25,7 +25,7 @@ object DataMapper {
     }
 
     //mengubah entity (Room) model menjadi domain model
-    fun mapEntitiesToDomain(input: List<com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity>): List<Tourism> =
+    fun mapEntitiesToDomain(input: List<TourismEntity>): List<Tourism> =
         // map Kotlin untuk melakukan perulangan pada sebuah List
         input.map {
             Tourism(
@@ -43,7 +43,7 @@ object DataMapper {
 
     // untuk mengubah domain model menjadi Entity Model Room
     fun mapDomainToEntity(input: Tourism) =
-        com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity(
+        TourismEntity(
             tourismId = input.tourismId,
             description = input.description,
             name = input.name,
