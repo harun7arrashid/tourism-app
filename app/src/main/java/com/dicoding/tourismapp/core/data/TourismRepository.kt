@@ -39,11 +39,6 @@ class TourismRepository private constructor(
         object : NetworkBoundResource<List<Tourism>, List<TourismResponse>>(appExecutors) {
 
             override fun loadFromDB(): Flowable<List<Tourism>> {
-                //return localDataSource.getAllTourism()
-                // Transformations.map untuk mengubah tipe data yang di dalam LiveData tersebut.
-//                return Transformations.map(localDataSource.getAllTourism()) {
-//                    DataMapper.mapEntitiesToDomain(it) // mengubah entity (Room) model menjadi domain model
-//                }
                 return localDataSource.getAllTourism().map { DataMapper.mapEntitiesToDomain(it) }
             }
 

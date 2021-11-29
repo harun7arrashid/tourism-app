@@ -11,7 +11,6 @@ import io.reactivex.subjects.PublishSubject
 
 abstract class NetworkBoundResource<ResultType, RequestType>(private val mExecutors: AppExecutors) {
 
-    //private val result = MediatorLiveData<Resource<ResultType>>()
     private val result = PublishSubject.create<Resource<ResultType>>()
     private val mCompositeDisposable = CompositeDisposable() // komposit sekali pakai
 
@@ -28,18 +27,6 @@ abstract class NetworkBoundResource<ResultType, RequestType>(private val mExecut
                 else result.onNext(Resource.Success(it))
             }
         mCompositeDisposable.add(db)
-
-//        val dbSource = loadFromDB()
-//        result.addSource(dbSource) { data ->
-//            result.removeSource(dbSource)
-//            if (shouldFetch(data)) {
-//                fetchFromNetwork(dbSource)
-//            } else {
-//                result.addSource(dbSource) { newData ->
-//                    result.value = Resource.Success(newData)
-//                }
-//            }
-//        }
     }
 
     protected open fun onFetchFailed() {}
@@ -98,5 +85,4 @@ abstract class NetworkBoundResource<ResultType, RequestType>(private val mExecut
     }
 
     fun asFlowable(): Flowable<Resource<ResultType>> = result.toFlowable(BackpressureStrategy.BUFFER)
-//    fun asLiveData(): LiveData<Resource<ResultType>> = result
 }
