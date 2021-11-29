@@ -1,0 +1,48 @@
+# compiler: R8
+# compiler_version: 2.1.75
+# pg_map_id: 5009a56
+# common_typos_disable
+com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity -> a.a.a.a.a.a.a.a.a:
+    java.lang.String image -> h
+    boolean isFavorite -> i
+    int like -> g
+    java.lang.String tourismId -> a
+    double latitude -> e
+    java.lang.String description -> c
+    double longitude -> f
+    java.lang.String name -> b
+    java.lang.String address -> d
+    12:12:void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,double,double,int,java.lang.String,boolean) -> <init>
+com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity$Creator -> a.a.a.a.a.a.a.a.a$a:
+    com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity createFromParcel(android.os.Parcel) -> a
+    com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity[] newArray(int) -> a
+    12:12:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    12:12:java.lang.Object[] newArray(int) -> newArray
+com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase -> com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase:
+    9:9:void <init>() -> <init>
+com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl -> com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl:
+    25:25:void <init>() -> <init>
+    25:25:java.util.List access$000(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> a
+    25:25:androidx.sqlite.db.SupportSQLiteDatabase access$602(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl,androidx.sqlite.db.SupportSQLiteDatabase) -> a
+    25:25:java.util.List access$100(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> b
+    25:25:void access$700(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl,androidx.sqlite.db.SupportSQLiteDatabase) -> b
+    25:25:java.util.List access$1000(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> c
+    118:131:void clearAllTables() -> clearAllTables
+    111:113:androidx.room.InvalidationTracker createInvalidationTracker() -> createInvalidationTracker
+    30:106:androidx.sqlite.db.SupportSQLiteOpenHelper createOpenHelper(androidx.room.DatabaseConfiguration) -> createOpenHelper
+    25:25:java.util.List access$200(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> d
+    25:25:java.util.List access$300(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> e
+    25:25:java.util.List access$400(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> f
+    25:25:java.util.List access$500(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> g
+    25:25:java.util.List access$800(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> h
+    25:25:java.util.List access$900(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl) -> i
+com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl$1 -> com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl$a:
+    com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl this$0 -> a
+    30:30:void <init>(com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl,int) -> <init>
+    33:36:void createAllTables(androidx.sqlite.db.SupportSQLiteDatabase) -> createAllTables
+    40:46:void dropAllTables(androidx.sqlite.db.SupportSQLiteDatabase) -> dropAllTables
+    50:55:void onCreate(androidx.sqlite.db.SupportSQLiteDatabase) -> onCreate
+    59:66:void onOpen(androidx.sqlite.db.SupportSQLiteDatabase) -> onOpen
+    75:75:void onPostMigrate(androidx.sqlite.db.SupportSQLiteDatabase) -> onPostMigrate
+    70:71:void onPreMigrate(androidx.sqlite.db.SupportSQLiteDatabase) -> onPreMigrate
+    79:98:androidx.room.RoomOpenHelper$ValidationResult onValidateSchema(androidx.sqlite.db.SupportSQLiteDatabase) -> onValidateSchema

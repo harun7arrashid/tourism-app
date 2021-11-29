@@ -1,0 +1,105 @@
+com.dicoding.tourismapp.core.domain.usecase.TourismInteractor
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$1$2
+com.dicoding.tourismapp.core.di.CoreModuleKt$databaseModule$1$2
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$2
+com.dicoding.tourismapp.core.di.CoreModuleKt$repositoryModule$1
+com.dicoding.tourismapp.core.data.source.remote.network.ApiConfig
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1
+com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$5
+com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase:
+    public abstract com.dicoding.tourismapp.core.data.source.local.room.TourismDao tourismDao()
+com.dicoding.tourismapp.core.databinding.ItemListTourismBinding
+com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$1
+com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$3
+com.dicoding.tourismapp.core.di.CoreModuleKt$networkModule$1$2
+com.dicoding.tourismapp.core.di.CoreModuleKt
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$1$2$1
+com.dicoding.tourismapp.core.data.TourismRepository$getFavoriteTourism$$inlined$map$1$2$1
+com.dicoding.tourismapp.core.ui.TourismAdapter$ListViewHolder$1
+com.dicoding.tourismapp.core.data.TourismRepository$getAllTourism$1$loadFromDB$$inlined$map$1
+com.dicoding.tourismapp.core.domain.usecase.TourismUseCase
+com.dicoding.tourismapp.core.utils.DataMapper
+com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse$Success
+com.dicoding.tourismapp.core.data.TourismRepository$getAllTourism$1$loadFromDB$$inlined$map$1$2$1
+com.dicoding.tourismapp.core.data.source.remote.RemoteDataSource
+com.dicoding.tourismapp.core.data.source.remote.response.TourismResponse
+com.dicoding.tourismapp.core.di.CoreModuleKt$repositoryModule$1$4
+com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse$Error
+com.dicoding.tourismapp.core.data.Resource$Success
+com.dicoding.tourismapp.core.data.source.remote.RemoteDataSource$getAllTourism$2
+com.dicoding.tourismapp.core.di.CoreModuleKt$repositoryModule$1$2
+com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity:
+    public synthetic void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,double,double,int,java.lang.String,boolean,int,kotlin.jvm.internal.DefaultConstructorMarker)
+    public static synthetic com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity copy$default(com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity,java.lang.String,java.lang.String,java.lang.String,java.lang.String,double,double,int,java.lang.String,boolean,int,java.lang.Object)
+    public final java.lang.String getTourismId()
+    public final void setTourismId(java.lang.String)
+    public final java.lang.String getName()
+    public final void setName(java.lang.String)
+    public final java.lang.String getDescription()
+    public final void setDescription(java.lang.String)
+    public final java.lang.String getAddress()
+    public final void setAddress(java.lang.String)
+    public final double getLatitude()
+    public final void setLatitude(double)
+    public final double getLongitude()
+    public final void setLongitude(double)
+    public final int getLike()
+    public final void setLike(int)
+    public final java.lang.String getImage()
+    public final void setImage(java.lang.String)
+    public final boolean isFavorite()
+    public final void setFavorite(boolean)
+    public final java.lang.String component1()
+    public final java.lang.String component2()
+    public final java.lang.String component3()
+    public final java.lang.String component4()
+    public final double component5()
+    public final double component6()
+    public final int component7()
+    public final java.lang.String component8()
+    public final boolean component9()
+    public final com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity copy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,double,double,int,java.lang.String,boolean)
+com.dicoding.tourismapp.core.data.Resource$Error
+com.dicoding.tourismapp.core.data.source.remote.network.ApiService
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$2$2$1
+com.dicoding.tourismapp.core.di.CoreModuleKt$databaseModule$1$1
+com.dicoding.tourismapp.core.data.source.local.room.TourismDao
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$1
+com.dicoding.tourismapp.core.utils.AppExecutors$Companion
+com.dicoding.tourismapp.core.di.CoreModuleKt$databaseModule$1
+com.dicoding.tourismapp.core.data.source.local.LocalDataSource
+com.dicoding.tourismapp.core.domain.model.Tourism$Creator
+com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse$Empty
+com.dicoding.tourismapp.core.di.CoreModuleKt$networkModule$1
+com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase_Impl:
+    public com.dicoding.tourismapp.core.data.source.local.room.TourismDao tourismDao()
+    private volatile com.dicoding.tourismapp.core.data.source.local.room.TourismDao _tourismDao
+com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$2
+com.dicoding.tourismapp.core.di.CoreModuleKt$networkModule$1$1
+com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl$4
+com.dicoding.tourismapp.core.BuildConfig
+com.dicoding.tourismapp.core.utils.AppExecutors$MainThreadExecutor
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$3$2$1
+com.dicoding.tourismapp.core.data.TourismRepository
+com.dicoding.tourismapp.core.domain.model.Tourism
+com.dicoding.tourismapp.core.data.Resource$Loading
+com.dicoding.tourismapp.core.data.TourismRepository$setFavoriteTourism$1
+com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse
+com.dicoding.tourismapp.core.data.TourismRepository$getAllTourism$1$loadFromDB$$inlined$map$1$2
+com.dicoding.tourismapp.core.data.TourismRepository$getFavoriteTourism$$inlined$map$1$2
+com.dicoding.tourismapp.core.ui.TourismAdapter
+com.dicoding.tourismapp.core.domain.repository.ITourismRepository
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$3$2
+com.dicoding.tourismapp.core.ui.TourismAdapter$ListViewHolder
+com.dicoding.tourismapp.core.data.TourismRepository$getFavoriteTourism$$inlined$map$1
+com.dicoding.tourismapp.core.data.source.remote.response.ListTourismResponse
+com.dicoding.tourismapp.core.di.CoreModuleKt$repositoryModule$1$3
+com.dicoding.tourismapp.core.data.NetworkBoundResource
+com.dicoding.tourismapp.core.utils.JsonHelper
+com.dicoding.tourismapp.core.di.CoreModuleKt$repositoryModule$1$1
+com.dicoding.tourismapp.core.data.TourismRepository$getAllTourism$1
+com.dicoding.tourismapp.core.utils.AppExecutors
+com.dicoding.tourismapp.core.data.Resource
+com.dicoding.tourismapp.core.data.source.local.room.TourismDao_Impl
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$3
+com.dicoding.tourismapp.core.data.NetworkBoundResource$result$1$invokeSuspend$$inlined$map$2$2
