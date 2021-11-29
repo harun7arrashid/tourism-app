@@ -24,7 +24,12 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true // sblmnya false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -41,9 +46,9 @@ android {
     }
     dynamicFeatures = [':maps']
 
-    lintOptions {
-        checkReleaseBuilds false
-    }
+//    lintOptions {
+//        checkReleaseBuilds false
+//    }
 }
 
 dependencies {
